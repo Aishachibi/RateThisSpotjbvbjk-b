@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Rate This Spot</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="add-new-spot.html">Add New Spot</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+    <div class="profile-container">
+        <h1>User Profile</h1>
+        <form>
+            <div class="profile-picture">
+                <img src="assets/images/7.jpg" alt="Profile Picture">
+                <input type="file" accept="image/*">
+            </div>
+            <input type="text" placeholder="Username" value="Username" readonly>
+            <h2>Submitted Reviews</h2>
+            <div class="reviews">
+                <!-- Example of a review -->
+                <div class="review">
+                    <p>⭐⭐⭐⭐⭐</p>
+                    <p>The Tudor Pass</p>
+                    <button onclick="window.location.href='review.html'">View</button>
+                </div>
+                <!-- Repeat review structure for other reviews -->
+            </div>
+            <button type="button" onclick="window.location.href='profile.html'">Edit Profile</button>
+            <button type="button" onclick="window.location.href='index.html'">Log Out</button>
+        </form>
+    </div>
+</body>
+</html>

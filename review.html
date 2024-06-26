@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review - Rate This Spot</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="add-new-spot.html">Add New Spot</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+    <div class="review-container">
+        <h1>Review</h1>
+        <form>
+            <input type="text" placeholder="Location" value="The Tudor Pass" readonly>
+            <textarea placeholder="Write review here..." required></textarea>
+            <label>Rating:</label>
+            <div class="rating">
+                <input type="radio" name="rating" value="1">⭐
+                <input type="radio" name="rating" value="2">⭐⭐
+                <input type="radio" name="rating" value="3">⭐⭐⭐
+                <input type="radio" name="rating" value="4">⭐⭐⭐⭐
+                <input type="radio" name="rating" value="5">⭐⭐⭐⭐⭐
+            </div>
+            <input type="date" required>
+            <input type="text" placeholder="Address" value="HY7 3UN" readonly>
+            <button type="submit">Edit</button>
+            <button type="button" onclick="window.location.href='index.html'">Delete</button>
+        </form>
+    </div>
+</body>
+</html>
